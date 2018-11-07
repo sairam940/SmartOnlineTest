@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>index</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/index</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>update-question</servlet-name>
+        <jsp-file>/update-question.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>update-question</servlet-name>
+        <url-pattern>/update-question</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>view-subject</servlet-name>
+        <jsp-file>/view-subject.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>view-subject</servlet-name>
+        <url-pattern>/view-subject</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>view-question</servlet-name>
+        <jsp-file>/view-question.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>view-question</servlet-name>
+        <url-pattern>/view-question</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>add-question</servlet-name>
+        <jsp-file>/add-question.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>add-question</servlet-name>
+        <url-pattern>/add-question</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>faculty-changepassword</servlet-name>
+        <jsp-file>/faculty-changepassword.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>faculty-changepassword</servlet-name>
+        <url-pattern>/faculty-changepassword</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>faculty-profile</servlet-name>
+        <jsp-file>/faculty-profile.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>faculty-profile</servlet-name>
+        <url-pattern>/faculty-profile</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>contact-admin</servlet-name>
+        <jsp-file>/contact-admin.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>contact-admin</servlet-name>
+        <url-pattern>/contact-admin</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>history</servlet-name>
+        <jsp-file>/history.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>history</servlet-name>
+        <url-pattern>/history</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>home</servlet-name>
+        <jsp-file>/home.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>home</servlet-name>
+        <url-pattern>/home</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>faculty-login</servlet-name>
+        <jsp-file>/faculty-login.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>faculty-login</servlet-name>
+        <url-pattern>/faculty-login</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>faculty-list</servlet-name>
+        <jsp-file>/faculty-list.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>faculty-list</servlet-name>
+        <url-pattern>/faculty-list</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>add-faculty</servlet-name>
+        <jsp-file>/add-faculty.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>add-faculty</servlet-name>
+        <url-pattern>/add-faculty</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>faculty-students</servlet-name>
+        <jsp-file>/faculty-students.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>faculty-students</servlet-name>
+        <url-pattern>/faculty-students</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>faculty-chat</servlet-name>
+        <jsp-file>/faculty-chat.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>faculty-chat</servlet-name>
+        <url-pattern>/faculty-chat</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>student-chat</servlet-name>
+        <jsp-file>/student-chat.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>student-chat</servlet-name>
+        <url-pattern>/student-chat</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>faculty-home</servlet-name>
+        <jsp-file>/faculty-home.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>faculty-home</servlet-name>
+        <url-pattern>/faculty-home</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>change</servlet-name>
+        <jsp-file>/changepass.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>change</servlet-name>
+        <url-pattern>/change</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>achangepass</servlet-name>
+        <jsp-file>/achangepass.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>achangepass</servlet-name>
+        <url-pattern>/achangepass</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>profile</servlet-name>
+        <jsp-file>/profile.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>profile</servlet-name>
+        <url-pattern>/profile</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>faculty-forgot</servlet-name>
+        <jsp-file>/faculty-forgot.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>faculty-forgot</servlet-name>
+        <url-pattern>/faculty-forgot</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>aprofile</servlet-name>
+        <jsp-file>/aprofile.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>aprofile</servlet-name>
+        <url-pattern>/aprofile</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>report</servlet-name>
+        <jsp-file>/report.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>report</servlet-name>
+        <url-pattern>/report</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>reports</servlet-name>
+        <jsp-file>/reports.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>reports</servlet-name>
+        <url-pattern>/reports</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>answer</servlet-name>
+        <jsp-file>/answer.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>answer</servlet-name>
+        <url-pattern>/answer</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>result</servlet-name>
+        <jsp-file>/result.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>result</servlet-name>
+        <url-pattern>/result</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>aresult</servlet-name>
+        <jsp-file>/aresult.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>aresult</servlet-name>
+        <url-pattern>/aresult</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>level</servlet-name>
+        <jsp-file>/exam-level.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>level</servlet-name>
+        <url-pattern>/level</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <jsp-file>/logout.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>alogout</servlet-name>
+        <jsp-file>/alogout.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>alogout</servlet-name>
+        <url-pattern>/alogout</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>signup</servlet-name>
+        <jsp-file>/signup.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signup</servlet-name>
+        <url-pattern>/signup</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>signin</servlet-name>
+        <jsp-file>/signin.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signin</servlet-name>
+        <url-pattern>/signin</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>about</servlet-name>
+        <jsp-file>/about.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>about</servlet-name>
+        <url-pattern>/about</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>exam</servlet-name>
+        <jsp-file>/exam.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>exam</servlet-name>
+        <url-pattern>/exam</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>admin</servlet-name>
+        <jsp-file>/admin.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>admin</servlet-name>
+        <url-pattern>/admin</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>tests</servlet-name>
+        <jsp-file>/tests.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>tests</servlet-name>
+        <url-pattern>/tests</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>info</servlet-name>
+        <jsp-file>/instructions.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>info</servlet-name>
+        <url-pattern>/info</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>help</servlet-name>
+        <jsp-file>/help.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>help</servlet-name>
+        <url-pattern>/help</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>instructions</servlet-name>
+        <jsp-file>/pre.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>instructions</servlet-name>
+        <url-pattern>/instructions</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>contact</servlet-name>
+        <jsp-file>/contact.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>contact</servlet-name>
+        <url-pattern>/contact</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>contact-list</servlet-name>
+        <jsp-file>/acontact.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>contact-list</servlet-name>
+        <url-pattern>/contact-list</url-pattern> <!-- Use this URL -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>forgot</servlet-name>
+        <jsp-file>/forgot.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>forgot</servlet-name>
+        <url-pattern>/forgot</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>aforgot</servlet-name>
+        <jsp-file>/forgot-password.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>aforgot</servlet-name>
+        <url-pattern>/forgot-password</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>student-profile</servlet-name>
+        <jsp-file>/student_profile.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>student-profile</servlet-name>
+        <url-pattern>/student-profile</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>student</servlet-name>
+        <servlet-class>controllers.StudentController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>student</servlet-name>
+        <url-pattern>/student/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getpass</servlet-name>
+        <servlet-class>controllers.ForgotPassword</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getpass</servlet-name>
+        <url-pattern>/GetPass/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>subject</servlet-name>
+        <jsp-file>/subject.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>subject</servlet-name>
+        <url-pattern>/subject</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>student_view</servlet-name>
+        <jsp-file>/student_view.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>student_view</servlet-name>
+        <url-pattern>/student_view</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>subject_view</servlet-name>
+        <jsp-file>/subject_action.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>subject_view</servlet-name>
+        <url-pattern>/subject_view</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>student_gallery</servlet-name>
+        <jsp-file>/student_gallery.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>student_gallery</servlet-name>
+        <url-pattern>/student_gallery</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>question</servlet-name>
+        <jsp-file>/question.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>question</servlet-name>
+        <url-pattern>/question</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>question1</servlet-name>
+        <jsp-file>/question_action.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>question1</servlet-name>
+        <url-pattern>/question_view</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>subject-controller</servlet-name>
+        <servlet-class>controllers.SubjectController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>subject-controller</servlet-name>
+        <url-pattern>/addSubject/</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <jsp-file>/login.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+</web-app>
